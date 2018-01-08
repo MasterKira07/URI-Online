@@ -1,14 +1,23 @@
-def cifra_cesar(palavra,saltos):
-    nova_palavra = ""
-    for i in palavra:
-        valor_ascii = ord(i) - saltos
-        if(valor_ascii < 65):
-            valor_ascii = 91 - (65 - valor_ascii)
-        nova_palavra += chr(valor_ascii)
-    return nova_palavra
+def qtd_carry(primeiro, segundo):
+    qtd = 0
+    if(len(primeiro) < len(segundo)):
+        primeiro,segundo = segundo,primeiro
+    for i in range(primeiro-1,-1,-1):
+        if(int(primeiro[i]) + int(segundo[i]) >= 10):
+            
+            qtd += 1
+    if(qtd == 0):
+        return "No carry operation."
+    elif(qtd == 1):
+        return "1 carry operation."
+    else:
+        return str(qtd) + " carry operations."
 
-qtd = int(input())
-for i in range(qtd):
-    palavra = input()
-    saltos = int(input())
-    print(cifra_cesar(palavra,saltos))
+
+while(True):
+    valores = input()
+    valores = valores.split()
+    if(valores[0] != "0" or valores[1] != "0"):
+        print( qtd_carry(valores[0], valores[1]) )
+    else:
+        break
