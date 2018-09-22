@@ -22,5 +22,7 @@ public class URI1020 {
         System.out.println(String.format("%d ano(s)", dados[0]));
         System.out.println(String.format("%d mes(es)", dados[1]));
         System.out.println(String.format("%d dia(s)", dados[2]));
+
+        
     }
 }
