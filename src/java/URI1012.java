@@ -1,13 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package br.com.diogoleite.main;
-
 /**
  *
  * @author diogo_leite
+ * URI - (Accepted) #11686402
  */
 public class URI1012 {
     private static double PI = 3.14159;

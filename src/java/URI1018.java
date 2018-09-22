@@ -1,13 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package br.com.diogoleite.main;
-
 /**
  *
  * @author diogo_leite
+ * URI - (Accepted) #11691543
  */
 public class URI1018 {
     private static final int[] VALORES = {100, 50, 20, 10, 5, 2, 1};
